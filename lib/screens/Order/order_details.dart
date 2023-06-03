@@ -2,9 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sms/flutter_sms.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:servispasaoglu_v3/main.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -647,47 +645,47 @@ class _OrderDetailsState extends State<OrderDetails> {
                         const Text('Telefon')
                       ],
                     )),
-                    Flexible(
-                        child: Column(
-                      children: [
-                        IconButton(
-                          color: Colors.blue,
-                          iconSize: 64,
-                          icon: const Icon(Icons.sms),
-                          onPressed: () async {
-                            String telephone = widget.order.telephoneNumber!
-                                .replaceAll("/[ -()]/", "");
-                            telephone = telephone.startsWith("+")
-                                ? telephone
-                                : "+90$telephone";
-                            telephone = telephone.substring(1);
-                            String customerName = widget.order.customerName!;
-                            customerName = customerName
-                                .toLowerCase()
-                                .split(" ")
-                                .reduce((value, element) =>
-                                    "$value ${element[0].toUpperCase()}${element.substring(1).toLowerCase()}");
-                            String text = Uri.parse(
-                                    "Sayın $customerName, ${widget.order.plateNumber} plakalı ${widget.order.brand != null ? widget.order.brand!.brandName! : widget.order.brandId!} ${widget.order.model != null ? widget.order.model!.modelName! : widget.order.modelId!} aracınızın yazılım işlemi tamamlanmıştır.")
-                                .toString();
-                            Permission.sms.request().then((value) => value
-                                    .isGranted
-                                ? canSendSMS().then((send) => send
-                                    ? launchSms(
-                                        message: text, number: telephone)
-                                    : ScaffoldMessenger.of(context)
-                                        .showSnackBar(const SnackBar(
-                                            content:
-                                                Text("SMS başlatılamıyor."))))
-                                : ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
-                                        content: Text(
-                                            "SMS erişim izni verilmedi."))));
-                          },
-                        ),
-                        const Text('SMS')
-                      ],
-                    )),
+                    // Flexible(
+                    //     child: Column(
+                    //   children: [
+                    //     IconButton(
+                    //       color: Colors.blue,
+                    //       iconSize: 64,
+                    //       icon: const Icon(Icons.sms),
+                    //       onPressed: () async {
+                    //         String telephone = widget.order.telephoneNumber!
+                    //             .replaceAll("/[ -()]/", "");
+                    //         telephone = telephone.startsWith("+")
+                    //             ? telephone
+                    //             : "+90$telephone";
+                    //         telephone = telephone.substring(1);
+                    //         String customerName = widget.order.customerName!;
+                    //         customerName = customerName
+                    //             .toLowerCase()
+                    //             .split(" ")
+                    //             .reduce((value, element) =>
+                    //                 "$value ${element[0].toUpperCase()}${element.substring(1).toLowerCase()}");
+                    //         String text = Uri.parse(
+                    //                 "Sayın $customerName, ${widget.order.plateNumber} plakalı ${widget.order.brand != null ? widget.order.brand!.brandName! : widget.order.brandId!} ${widget.order.model != null ? widget.order.model!.modelName! : widget.order.modelId!} aracınızın yazılım işlemi tamamlanmıştır.")
+                    //             .toString();
+                    //         Permission.sms.request().then((value) => value
+                    //                 .isGranted
+                    //             ? canSendSMS().then((send) => send
+                    //                 ? launchSms(
+                    //                     message: text, number: telephone)
+                    //                 : ScaffoldMessenger.of(context)
+                    //                     .showSnackBar(const SnackBar(
+                    //                         content:
+                    //                             Text("SMS başlatılamıyor."))))
+                    //             : ScaffoldMessenger.of(context).showSnackBar(
+                    //                 const SnackBar(
+                    //                     content: Text(
+                    //                         "SMS erişim izni verilmedi."))));
+                    //       },
+                    //     ),
+                    //     const Text('SMS')
+                    //   ],
+                    // )),
                     Flexible(
                         child: Column(
                       children: [

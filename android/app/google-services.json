@@ -1,0 +1,39 @@
+{
+	"project_info": {
+		"project_number": "374409687254",
+		"project_id": "servispasaoglubayiapp",
+		"storage_bucket": "servispasaoglubayiapp.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:374409687254:android:667638601fb4361dacd977",
+				"android_client_info": {
+					"package_name": "com.servispasaoglu.bayi"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "374409687254-ei9ikk6a89sjprvscvlpjc8dkh5elf9e.apps.googleusercontent.com",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "AIzaSyBjpOFj596w7xrNfSktnW3sSXcqiADmGEk"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "374409687254-ei9ikk6a89sjprvscvlpjc8dkh5elf9e.apps.googleusercontent.com",
+							"client_type": 3
+						}
+					]
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}

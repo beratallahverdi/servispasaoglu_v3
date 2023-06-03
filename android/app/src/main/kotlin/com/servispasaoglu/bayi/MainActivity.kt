@@ -1,4 +1,4 @@
-package com.beratallahverdi.servispasaoglu_v3
+package com.servispasaoglu.bayi
 
 import io.flutter.embedding.android.FlutterActivity
 
