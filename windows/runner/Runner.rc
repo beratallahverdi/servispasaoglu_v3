@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.beratallahverdi" "\0"
-            VALUE "FileDescription", "flutter_template" "\0"
+            VALUE "FileDescription", "servispasaoglu_v3" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "flutter_template" "\0"
+            VALUE "InternalName", "servispasaoglu_v3" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.beratallahverdi. All rights reserved." "\0"
-            VALUE "OriginalFilename", "flutter_template.exe" "\0"
-            VALUE "ProductName", "flutter_template" "\0"
+            VALUE "OriginalFilename", "servispasaoglu_v3.exe" "\0"
+            VALUE "ProductName", "servispasaoglu_v3" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

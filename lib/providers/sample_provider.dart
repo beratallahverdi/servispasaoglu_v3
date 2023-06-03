@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
-import 'package:flutter_template/models/sample_model.dart';
+import 'package:servispasaoglu_v3/models/sample_model.dart';
 
 class SampleProvider extends ChangeNotifier {
   final List<Sample> _dataList = [];

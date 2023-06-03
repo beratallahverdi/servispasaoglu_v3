@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/screens/sample_screen.dart';
+import 'package:servispasaoglu_v3/screens/sample_screen.dart';
 
 class Routes extends StatefulWidget {
   static const String id = 'Routes';

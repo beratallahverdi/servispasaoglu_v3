@@ -3,8 +3,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:flutter_template/models/sample_model.dart';
-import 'package:flutter_template/providers/sample_provider.dart';
+import 'package:servispasaoglu_v3/models/sample_model.dart';
+import 'package:servispasaoglu_v3/providers/sample_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:dio/dio.dart';
 

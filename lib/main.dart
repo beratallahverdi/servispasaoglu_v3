@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:flutter_template/models/sample_model.dart';
-import 'package:flutter_template/routes.dart';
+import 'package:servispasaoglu_v3/models/sample_model.dart';
+import 'package:servispasaoglu_v3/routes.dart';
 import 'package:provider/provider.dart';
 import 'providers/sample_provider.dart';
 

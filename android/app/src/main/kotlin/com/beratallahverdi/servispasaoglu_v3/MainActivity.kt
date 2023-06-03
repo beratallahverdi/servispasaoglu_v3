@@ -1,4 +1,4 @@
-package com.beratallahverdi.flutter_template
+package com.beratallahverdi.servispasaoglu_v3
 
 import io.flutter.embedding.android.FlutterActivity
 
